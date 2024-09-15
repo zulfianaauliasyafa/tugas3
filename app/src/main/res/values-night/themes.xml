@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kalkulator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">@color/status_bar</item>
+    </style>
+
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:inset">0dp</item>
+        <item name="android:backgroundTint">@color/button_bg</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+
+    </style>
+
+    <style name="ACButton" parent="CalculatorButton">
+        <item name="android:textColor">@color/all_clear</item>
+    </style>
+
+    <style name="OperatorButton" parent="CalculatorButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/operator</item>
+    </style>
+
+</resources>
